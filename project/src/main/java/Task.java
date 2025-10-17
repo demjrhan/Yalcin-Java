@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.Scanner;
 
 public class Task {
@@ -40,7 +41,6 @@ public class Task {
             System.out.print("None");
         }
         System.out.println();
-
     }
 
     private static void sayHelloForGreater7(Scanner scanner) {
@@ -61,7 +61,8 @@ public class Task {
         else System.out.println("There is no such name");
     }
 
-    private static String isBalanced(String brackets) {
+    /* Public, in order to use it in test cases. */
+    public static String isBalanced(String brackets) {
         if (brackets == null || brackets.isBlank()) {
             return "Given bracket sequence is empty, please give sequence consists of at least 1 element.";
         }
